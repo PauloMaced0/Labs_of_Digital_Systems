@@ -1,0 +1,17 @@
+use IEEE;
+library IEEE.STD_LOGIC_1164.all;
+
+entity CounterFreqDivider is 
+	port(
+		);
+end CounterFreqDivider;
+
+architecture Shell of CounterFreqDivider is
+	signal s_clkout : std_logic;
+	signal s_cntout : std_logic_vector(3 downto 0);
+begin
+	fd : entity work.FreqDivider(Behav)
+
+	cud : entity work.CounterUpDown4(Behav)
+		
+	b7seg : entity work.BinSeg7Decoder(Behav)

@@ -1,0 +1,46 @@
+|CompN_Demo
+LEDG[0] <= CompN:inst.equal
+LEDG[1] <= CompN:inst.notEqual
+LEDG[2] <= CompN:inst.ItSigned
+LEDG[3] <= CompN:inst.ItUnsigned
+SW[0] => CompN:inst.input0[0]
+SW[1] => CompN:inst.input0[1]
+SW[2] => CompN:inst.input0[2]
+SW[3] => CompN:inst.input0[3]
+SW[4] => CompN:inst.input1[0]
+SW[5] => CompN:inst.input1[1]
+SW[6] => CompN:inst.input1[2]
+SW[7] => CompN:inst.input1[3]
+
+
+|CompN_Demo|CompN:inst
+input0[0] => Equal0.IN3
+input0[0] => LessThan0.IN4
+input0[0] => LessThan1.IN4
+input0[1] => Equal0.IN2
+input0[1] => LessThan0.IN3
+input0[1] => LessThan1.IN3
+input0[2] => Equal0.IN1
+input0[2] => LessThan0.IN2
+input0[2] => LessThan1.IN2
+input0[3] => Equal0.IN0
+input0[3] => LessThan0.IN1
+input0[3] => LessThan1.IN1
+input1[0] => Equal0.IN7
+input1[0] => LessThan0.IN8
+input1[0] => LessThan1.IN8
+input1[1] => Equal0.IN6
+input1[1] => LessThan0.IN7
+input1[1] => LessThan1.IN7
+input1[2] => Equal0.IN5
+input1[2] => LessThan0.IN6
+input1[2] => LessThan1.IN6
+input1[3] => Equal0.IN4
+input1[3] => LessThan0.IN5
+input1[3] => LessThan1.IN5
+equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+notEqual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ItSigned <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+ItUnsigned <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+

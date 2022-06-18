@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+entity ALU4 is 
+	port(operation : in std_logic_vector(2 downto 0);
+		operand0 : in std_logic_vector(3 downto 0);
+		operand1 : in std_logic_vector(3 downto 0);
+		result : out std_logic_vector(3 downto 0);
+		multHi : out std_logic_vector(3 downto 0)
+		);
+end ALU4;
+
+architecture Behav of ALU4 is
+	signal s_multires : std_logic_vector(7 downto 0);
+
+process(operation,operand0,operand1,s_multires)
+begin
+	case operation is

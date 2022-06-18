@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Dec_4En is 
+	port(enable : in std_logic;
+		inputs : in std_logic_vector(1 downto 0);
+		outputs : out std_logic_vector(3 downto 0);
+		);
+		
+end Dec_4En;
+
+architecture Behav of Dec_4En is
+begin 
+	outputs <= "0000" when (enable = '0') else
+				"0001" when (inputs="00") else
+				"0010" when (inputs = "01") else
+				"0100" when (inputs = "10") else
+				"1000" when (inputs = "11");
+end Behav;
+				

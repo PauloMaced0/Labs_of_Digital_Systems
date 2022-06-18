@@ -1,0 +1,40 @@
+|EqCmp8
+LEDG[0] <= EqComp8:inst.compOut
+SW[0] => EqComp8:inst.input0[0]
+SW[1] => EqComp8:inst.input0[1]
+SW[2] => EqComp8:inst.input0[2]
+SW[3] => EqComp8:inst.input0[3]
+SW[4] => EqComp8:inst.input0[4]
+SW[5] => EqComp8:inst.input0[5]
+SW[6] => EqComp8:inst.input0[6]
+SW[7] => EqComp8:inst.input0[7]
+SW[8] => EqComp8:inst.input1[0]
+SW[9] => EqComp8:inst.input1[1]
+SW[10] => EqComp8:inst.input1[2]
+SW[11] => EqComp8:inst.input1[3]
+SW[12] => EqComp8:inst.input1[4]
+SW[13] => EqComp8:inst.input1[5]
+SW[14] => EqComp8:inst.input1[6]
+SW[15] => EqComp8:inst.input1[7]
+
+
+|EqCmp8|EqComp8:inst
+input0[0] => Equal0.IN7
+input0[1] => Equal0.IN6
+input0[2] => Equal0.IN5
+input0[3] => Equal0.IN4
+input0[4] => Equal0.IN3
+input0[5] => Equal0.IN2
+input0[6] => Equal0.IN1
+input0[7] => Equal0.IN0
+input1[0] => Equal0.IN15
+input1[1] => Equal0.IN14
+input1[2] => Equal0.IN13
+input1[3] => Equal0.IN12
+input1[4] => Equal0.IN11
+input1[5] => Equal0.IN10
+input1[6] => Equal0.IN9
+input1[7] => Equal0.IN8
+compOut <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

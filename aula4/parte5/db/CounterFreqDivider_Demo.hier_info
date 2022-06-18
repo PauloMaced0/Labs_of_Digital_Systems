@@ -1,0 +1,40 @@
+|CounterUpDown4
+upDown => s_cntvalue.OUTPUTSELECT
+upDown => s_cntvalue.OUTPUTSELECT
+upDown => s_cntvalue.OUTPUTSELECT
+upDown => s_cntvalue.OUTPUTSELECT
+upDown => s_cntvalue.OUTPUTSELECT
+upDown => s_cntvalue.OUTPUTSELECT
+reset => s_cntvalue.OUTPUTSELECT
+reset => s_cntvalue.OUTPUTSELECT
+reset => s_cntvalue.OUTPUTSELECT
+reset => s_cntvalue.OUTPUTSELECT
+reset => s_cntvalue.OUTPUTSELECT
+reset => s_cntvalue.OUTPUTSELECT
+clk => s_cntvalue[0].CLK
+clk => s_cntvalue[1].CLK
+clk => s_cntvalue[2].CLK
+clk => s_cntvalue[3].CLK
+clk => s_cntvalue[4].CLK
+clk => s_cntvalue[5].CLK
+enable => s_cntvalue.OUTPUTSELECT
+enable => s_cntvalue.OUTPUTSELECT
+enable => s_cntvalue.OUTPUTSELECT
+enable => s_cntvalue.OUTPUTSELECT
+enable => s_cntvalue.OUTPUTSELECT
+enable => s_cntvalue.OUTPUTSELECT
+loadEn => ~NO_FANOUT~
+dataIn[0] => ~NO_FANOUT~
+dataIn[1] => ~NO_FANOUT~
+dataIn[2] => ~NO_FANOUT~
+dataIn[3] => ~NO_FANOUT~
+dataIn[4] => ~NO_FANOUT~
+dataIn[5] => ~NO_FANOUT~
+cntOut[0] <= s_cntvalue[0].DB_MAX_OUTPUT_PORT_TYPE
+cntOut[1] <= s_cntvalue[1].DB_MAX_OUTPUT_PORT_TYPE
+cntOut[2] <= s_cntvalue[2].DB_MAX_OUTPUT_PORT_TYPE
+cntOut[3] <= s_cntvalue[3].DB_MAX_OUTPUT_PORT_TYPE
+cntOut[4] <= s_cntvalue[4].DB_MAX_OUTPUT_PORT_TYPE
+cntOut[5] <= s_cntvalue[5].DB_MAX_OUTPUT_PORT_TYPE
+
+

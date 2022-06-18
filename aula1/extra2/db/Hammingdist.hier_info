@@ -1,0 +1,71 @@
+|Hammingdist
+SW[0] => xnr:bitdif.inPort0[0]
+SW[1] => xnr:bitdif.inPort0[1]
+SW[2] => xnr:bitdif.inPort0[2]
+SW[3] => xnr:bitdif.inPort0[3]
+SW[4] => xnr:bitdif.inPort1[0]
+SW[5] => xnr:bitdif.inPort1[1]
+SW[6] => xnr:bitdif.inPort1[2]
+SW[7] => xnr:bitdif.inPort1[3]
+LEDG[0] << fulladder:f2.s
+LEDG[1] << fulladder:f3.s
+LEDG[2] << fulladder:f3.cout
+
+
+|Hammingdist|Xnr:bitdif
+inPort0[0] => outPort.IN0
+inPort0[1] => outPort.IN0
+inPort0[2] => outPort.IN0
+inPort0[3] => outPort.IN0
+inPort1[0] => outPort.IN1
+inPort1[1] => outPort.IN1
+inPort1[2] => outPort.IN1
+inPort1[3] => outPort.IN1
+outPort[0] <= outPort.DB_MAX_OUTPUT_PORT_TYPE
+outPort[1] <= outPort.DB_MAX_OUTPUT_PORT_TYPE
+outPort[2] <= outPort.DB_MAX_OUTPUT_PORT_TYPE
+outPort[3] <= outPort.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hammingdist|Fulladder:f1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hammingdist|Fulladder:f2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hammingdist|Fulladder:f3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+
+State Machine - |DrinksMachine|MaqVenda:fsm|pstate
+Name pstate.E5 pstate.E4 pstate.E3 pstate.E2 pstate.E1 pstate.E0 
+pstate.E0 0 0 0 0 0 0 
+pstate.E1 0 0 0 0 1 1 
+pstate.E2 0 0 0 1 0 1 
+pstate.E3 0 0 1 0 0 1 
+pstate.E4 0 1 0 0 0 1 
+pstate.E5 1 0 0 0 0 1 

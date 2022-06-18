@@ -1,0 +1,9 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity NAND2Gate is
+	port(inPort0 : in std_logic;
+		inPort1 : in std_logic;
+		outPort : out stdlogic);
+end NAN2Gate;
+

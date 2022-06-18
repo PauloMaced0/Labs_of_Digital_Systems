@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity DecodertoBCD is 
+		port(bininput : in std_logic_vector(3 downto 0);
+			decout_n : out std_logic_vector(6 downto 0)
+			);
+end DecodertoBCD;
+
+architecture Behav of DecodertoBCD is
+begin
+	decout_n <=	"0001" when (bininput = "0001") else
+					"0010" when (bininput = "0010") else
+					"0011" when (bininput = "0011") else
+					"" when (bininput = "0100") else
+					"" when (bininput = "0101") else
+					"" when (bininput = "0110") else
+					"" when (bininput = "0111") else
+					"" when (bininput = "1000") else
+					"" when (bininput = "1001") else
+					"" when (bininput = "1010") else
+					"" when (bininput = "1011") else
+					"" when (bininput = "1100") else
+					"" when (bininput = "1101") else
+					"" when (bininput = "1110") else
+					"" when (bininput = "1111") else
+					"0000";
+
+end Behav;

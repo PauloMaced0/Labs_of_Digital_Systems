@@ -1,0 +1,65 @@
+|Register8_Demo
+SW[0] => register8:r8.datain[0]
+SW[1] => register8:r8.datain[1]
+SW[2] => register8:r8.datain[2]
+SW[3] => register8:r8.datain[3]
+SW[4] => register8:r8.datain[4]
+SW[5] => register8:r8.datain[5]
+SW[6] => register8:r8.datain[6]
+SW[7] => register8:r8.datain[7]
+SW[8] => register8:r8.enable
+SW[9] => register8:r8.reset
+KEY[0] => register8:r8.clk
+LEDG[0] << register8:r8.dataout[0]
+LEDG[1] << register8:r8.dataout[1]
+LEDG[2] << register8:r8.dataout[2]
+LEDG[3] << register8:r8.dataout[3]
+LEDG[4] << register8:r8.dataout[4]
+LEDG[5] << register8:r8.dataout[5]
+LEDG[6] << register8:r8.dataout[6]
+LEDG[7] << register8:r8.dataout[7]
+
+
+|Register8_Demo|Register8:r8
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+reset => dataout.OUTPUTSELECT
+clk => dataout[0]~reg0.CLK
+clk => dataout[1]~reg0.CLK
+clk => dataout[2]~reg0.CLK
+clk => dataout[3]~reg0.CLK
+clk => dataout[4]~reg0.CLK
+clk => dataout[5]~reg0.CLK
+clk => dataout[6]~reg0.CLK
+clk => dataout[7]~reg0.CLK
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+enable => dataout.OUTPUTSELECT
+datain[0] => dataout.DATAB
+datain[1] => dataout.DATAB
+datain[2] => dataout.DATAB
+datain[3] => dataout.DATAB
+datain[4] => dataout.DATAB
+datain[5] => dataout.DATAB
+datain[6] => dataout.DATAB
+datain[7] => dataout.DATAB
+dataout[0] <= dataout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= dataout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= dataout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[3] <= dataout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[4] <= dataout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[5] <= dataout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[6] <= dataout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataout[7] <= dataout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
